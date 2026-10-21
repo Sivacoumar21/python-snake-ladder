@@ -1,0 +1,27 @@
+{% extends "base.html" %}{% block title %}Room {{ room.code }} · Python Snake & Ladder{% endblock %}{% block content %}
+<div class="gamehead"><div><div class="eyebrow">Multiplayer room</div><h1 style="margin:5px 0">Room {{ room.code }}</h1><p class="muted">Share this code with other players. Maximum four players.</p></div><div><button class="secondary" onclick="copyRoom()">Copy invite code</button> {% if room.host_id == user.id and room.status == 'waiting' %}<button id="startBtn" onclick="startGame()">Start game</button>{% endif %}</div></div>
+<div class="game-layout"><section class="panel"><h2>Board</h2><div id="board" class="board"></div><p class="muted">Ladders move you up; snakes move you down. You must roll the exact number to reach square 100.</p></section>
+<div><section class="panel"><h2>Players</h2><div id="players" class="players"></div><p id="status" class="result">Loading room…</p><button id="rollBtn" onclick="rollDice()" style="width:100%;margin-top:12px" disabled>🎲 Roll dice</button></section>
+<section id="questionPanel" class="panel question"><div class="eyebrow">Python challenge</div><h2 id="qtitle">Answer to move</h2><p id="qtext"></p><div id="choices"></div><div id="feedback"></div></section></div></div>
+<script>
+const ROOM={{ room.code|tojson }}, ME={{ user.username|tojson }}, HOST={{ (room.host_id == user.id)|tojson }};
+let currentQuestion=null, lastState=null, answerLocked=false;
+const board=document.getElementById('board');
+function buildBoard(){board.innerHTML='';for(let row=9;row>=0;row--){let nums=Array.from({length:10},(_,i)=>row*10+i+1);if(row%2===1)nums.reverse();for(const n of nums){const d=document.createElement('div');d.className='square';d.id='sq'+n;d.innerHTML='<span>'+n+'</span>';if(n===100)d.classList.add('goal');d.title=(n in (lastState?.ladders||{})?'Ladder':n in (lastState?.snakes||{})?'Snake':'Square '+n);board.appendChild(d)}}}
+function draw(state){lastState=state;buildBoard();for(const p of state.players){if(p.position>0){const el=document.getElementById('sq'+p.position);if(el){let tokens=el.querySelector('.tokens');if(!tokens){tokens=document.createElement('div');tokens.className='tokens';el.appendChild(tokens)}const t=document.createElement('span');t.className='token t'+(p.turn_order%4);t.title=p.username;tokens.appendChild(t)}}}
+const players=document.getElementById('players');players.innerHTML='';const active=state.players.find(p=>p.turn_order===state.current_turn&&!p.finished);
+state.players.forEach(p=>{const d=document.createElement('div');d.className='player'+(active&&active.username===p.username?' active':'');d.innerHTML='<div><strong>'+esc(p.username)+'</strong><div class="muted">Square '+p.position+' · '+p.correct+'/'+p.answered+' correct</div></div><div><strong>'+ (p.finished?p.score.toFixed(1)+'%':(p.turn_order===state.current_turn?'Your turn?':''))+'</strong></div>';players.appendChild(d)});
+document.getElementById('status').textContent=state.message;
+const myTurn=active&&active.username===ME;document.getElementById('rollBtn').disabled=!(state.status==='playing'&&myTurn&&!state.pending);
+const sb=document.getElementById('startBtn');if(sb)sb.disabled=state.status!=='waiting'||state.players.length<1;
+if(state.status==='finished')document.getElementById('rollBtn').textContent='Game finished';
+}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+async function refresh(){try{const r=await fetch('/api/room/'+ROOM);if(r.ok)draw(await r.json())}catch(e){}}
+async function startGame(){const r=await fetch('/api/room/'+ROOM+'/start',{method:'POST'});const d=await r.json();if(!r.ok)alert(d.error||'Could not start');await refresh()}
+async function rollDice(){document.getElementById('rollBtn').disabled=true;const r=await fetch('/api/room/'+ROOM+'/roll',{method:'POST'});const d=await r.json();if(!r.ok){alert(d.error||'Could not roll');await refresh();return}draw(d.game);showQuestion(d.question)}
+function showQuestion(q){currentQuestion=q;answerLocked=false;const p=document.getElementById('questionPanel');p.classList.add('show');document.getElementById('qtitle').textContent=q.topic+' · '+q.difficulty;document.getElementById('qtext').textContent=q.question;document.getElementById('feedback').innerHTML='';const c=document.getElementById('choices');c.innerHTML='';q.choices.forEach((choice,i)=>{const b=document.createElement('button');b.className='choice';b.textContent=String.fromCharCode(65+i)+'. '+choice;b.onclick=()=>submitAnswer(i);c.appendChild(b)})}
+async function submitAnswer(choice){if(answerLocked)return;answerLocked=true;document.querySelectorAll('.choice').forEach(b=>b.disabled=true);const r=await fetch('/api/room/'+ROOM+'/answer',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({choice})});const d=await r.json();if(!r.ok){document.getElementById('feedback').textContent=d.error||'Could not submit';return}document.getElementById('feedback').innerHTML='<div class="result"><strong>'+(d.correct?'Correct!':'Not quite.')+'</strong><br>'+esc(d.explanation)+'</div>';draw(d.game);setTimeout(()=>{document.getElementById('questionPanel').classList.remove('show');refresh()},2500)}
+async function copyRoom(){try{await navigator.clipboard.writeText(ROOM);alert('Room code copied: '+ROOM)}catch(e){alert('Share this room code: '+ROOM)}}
+buildBoard();refresh();setInterval(refresh,4000);
+</script>{% endblock %}

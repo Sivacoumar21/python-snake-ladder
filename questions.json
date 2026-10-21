@@ -1,0 +1,2102 @@
+[
+  {
+    "id": 1,
+    "topic": "Python fundamentals",
+    "difficulty": "Easy",
+    "question": "What is the result of `int('12') + 3`?",
+    "choices": [
+      "'123'",
+      "15",
+      "12.3",
+      "Error"
+    ],
+    "answer": 1,
+    "explanation": "int('12') converts the string to integer 12, then adds 3."
+  },
+  {
+    "id": 2,
+    "topic": "Python fundamentals",
+    "difficulty": "Medium",
+    "question": "Which value represents the absence of a value in Python?",
+    "choices": [
+      "None",
+      "null",
+      "undefined",
+      "empty"
+    ],
+    "answer": 0,
+    "explanation": "Python uses None."
+  },
+  {
+    "id": 3,
+    "topic": "Python fundamentals",
+    "difficulty": "Medium",
+    "question": "What is the type of `3.0`?",
+    "choices": [
+      "int",
+      "float",
+      "str",
+      "bool"
+    ],
+    "answer": 1,
+    "explanation": "A numeric literal with a decimal point is a float."
+  },
+  {
+    "id": 4,
+    "topic": "Python fundamentals",
+    "difficulty": "Hard",
+    "question": "Which operator calculates a remainder?",
+    "choices": [
+      "/",
+      "//",
+      "%",
+      "**"
+    ],
+    "answer": 2,
+    "explanation": "% is the modulo operator."
+  },
+  {
+    "id": 5,
+    "topic": "Python fundamentals",
+    "difficulty": "Easy",
+    "question": "What does `7 // 2` evaluate to?",
+    "choices": [
+      "3.5",
+      "3",
+      "1",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Floor division returns the floor of the quotient."
+  },
+  {
+    "id": 6,
+    "topic": "Python fundamentals",
+    "difficulty": "Easy",
+    "question": "Which is a valid Python variable name?",
+    "choices": [
+      "2score",
+      "total-score",
+      "total_score",
+      "class"
+    ],
+    "answer": 2,
+    "explanation": "Names cannot start with digits, contain hyphens, or use keywords."
+  },
+  {
+    "id": 7,
+    "topic": "Python fundamentals",
+    "difficulty": "Medium",
+    "question": "What does `len('Python')` return?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "Python"
+    ],
+    "answer": 1,
+    "explanation": "There are six characters."
+  },
+  {
+    "id": 8,
+    "topic": "Python fundamentals",
+    "difficulty": "Medium",
+    "question": "Which function converts a value to text?",
+    "choices": [
+      "str()",
+      "text()",
+      "string()",
+      "char()"
+    ],
+    "answer": 0,
+    "explanation": "str() creates a string representation."
+  },
+  {
+    "id": 9,
+    "topic": "Python fundamentals",
+    "difficulty": "Hard",
+    "question": "What is the result of `2 ** 3`?",
+    "choices": [
+      "6",
+      "8",
+      "9",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "** is exponentiation."
+  },
+  {
+    "id": 10,
+    "topic": "Python fundamentals",
+    "difficulty": "Easy",
+    "question": "Which symbol begins a single-line comment?",
+    "choices": [
+      "//",
+      "/*",
+      "#",
+      "--"
+    ],
+    "answer": 2,
+    "explanation": "Python comments begin with #."
+  },
+  {
+    "id": 11,
+    "topic": "Control flow",
+    "difficulty": "Easy",
+    "question": "Which keyword starts a conditional branch?",
+    "choices": [
+      "when",
+      "if",
+      "case",
+      "check"
+    ],
+    "answer": 1,
+    "explanation": "if begins a conditional."
+  },
+  {
+    "id": 12,
+    "topic": "Control flow",
+    "difficulty": "Medium",
+    "question": "What is printed by `for i in range(3): print(i, end=' ')`?",
+    "choices": [
+      "1 2 3",
+      "0 1 2",
+      "0 1 2 3",
+      "3 2 1"
+    ],
+    "answer": 1,
+    "explanation": "range(3) yields 0, 1, 2."
+  },
+  {
+    "id": 13,
+    "topic": "Control flow",
+    "difficulty": "Medium",
+    "question": "Which keyword skips to the next loop iteration?",
+    "choices": [
+      "pass",
+      "break",
+      "continue",
+      "next"
+    ],
+    "answer": 2,
+    "explanation": "continue skips the remainder of the current iteration."
+  },
+  {
+    "id": 14,
+    "topic": "Control flow",
+    "difficulty": "Hard",
+    "question": "What does `break` do inside a loop?",
+    "choices": [
+      "Restarts it",
+      "Exits the loop",
+      "Skips one item",
+      "Ends the program always"
+    ],
+    "answer": 1,
+    "explanation": "break terminates the nearest enclosing loop."
+  },
+  {
+    "id": 15,
+    "topic": "Control flow",
+    "difficulty": "Easy",
+    "question": "How many times does `for _ in range(4)` run?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "range(4) produces four values."
+  },
+  {
+    "id": 16,
+    "topic": "Control flow",
+    "difficulty": "Easy",
+    "question": "Which operator checks equality?",
+    "choices": [
+      "=",
+      "==",
+      "!=",
+      ":="
+    ],
+    "answer": 1,
+    "explanation": "== compares values for equality."
+  },
+  {
+    "id": 17,
+    "topic": "Control flow",
+    "difficulty": "Medium",
+    "question": "What is the result of `not True`?",
+    "choices": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ],
+    "answer": 1,
+    "explanation": "not negates a Boolean."
+  },
+  {
+    "id": 18,
+    "topic": "Control flow",
+    "difficulty": "Medium",
+    "question": "Which construct is suitable for a menu repeated until exit?",
+    "choices": [
+      "if only",
+      "while loop",
+      "import",
+      "class only"
+    ],
+    "answer": 1,
+    "explanation": "A while loop can repeat the menu until an exit condition."
+  },
+  {
+    "id": 19,
+    "topic": "Control flow",
+    "difficulty": "Hard",
+    "question": "What is printed by `x=5; print(x > 2 and x < 8)`?",
+    "choices": [
+      "True",
+      "False",
+      "5",
+      "Error"
+    ],
+    "answer": 0,
+    "explanation": "Both comparisons are true."
+  },
+  {
+    "id": 20,
+    "topic": "Control flow",
+    "difficulty": "Easy",
+    "question": "What does `range(2, 6, 2)` produce?",
+    "choices": [
+      "2, 3, 4, 5",
+      "2, 4",
+      "2, 4, 6",
+      "0, 2, 4"
+    ],
+    "answer": 1,
+    "explanation": "Start is inclusive, stop is exclusive, step is 2."
+  },
+  {
+    "id": 21,
+    "topic": "Strings and validation",
+    "difficulty": "Easy",
+    "question": "Which method removes whitespace at both ends?",
+    "choices": [
+      "strip()",
+      "split()",
+      "join()",
+      "replace()"
+    ],
+    "answer": 0,
+    "explanation": "strip() trims leading and trailing whitespace."
+  },
+  {
+    "id": 22,
+    "topic": "Strings and validation",
+    "difficulty": "Medium",
+    "question": "What does `'python'.upper()` return?",
+    "choices": [
+      "Python",
+      "PYTHON",
+      "python",
+      "Error"
+    ],
+    "answer": 1,
+    "explanation": "upper() converts letters to uppercase."
+  },
+  {
+    "id": 23,
+    "topic": "Strings and validation",
+    "difficulty": "Medium",
+    "question": "Which module provides regular-expression matching?",
+    "choices": [
+      "regex",
+      "re",
+      "string",
+      "match"
+    ],
+    "answer": 1,
+    "explanation": "The standard re module supports regular expressions."
+  },
+  {
+    "id": 24,
+    "topic": "Strings and validation",
+    "difficulty": "Hard",
+    "question": "What does `text.split(',')` do?",
+    "choices": [
+      "Joins with commas",
+      "Splits at commas",
+      "Removes all letters",
+      "Sorts text"
+    ],
+    "answer": 1,
+    "explanation": "split(',') returns pieces separated by commas."
+  },
+  {
+    "id": 25,
+    "topic": "Strings and validation",
+    "difficulty": "Easy",
+    "question": "Which expression checks whether `s` starts with `A`?",
+    "choices": [
+      "s.first('A')",
+      "s.startswith('A')",
+      "starts(s,'A')",
+      "s.begin == 'A'"
+    ],
+    "answer": 1,
+    "explanation": "startswith() tests a string prefix."
+  },
+  {
+    "id": 26,
+    "topic": "Strings and validation",
+    "difficulty": "Easy",
+    "question": "What is the result of `'abc'.replace('b','x')`?",
+    "choices": [
+      "axc",
+      "xbc",
+      "abx",
+      "abcx"
+    ],
+    "answer": 0,
+    "explanation": "replace substitutes b with x."
+  },
+  {
+    "id": 27,
+    "topic": "Strings and validation",
+    "difficulty": "Medium",
+    "question": "Why validate a temperature string before processing it?",
+    "choices": [
+      "To increase its length",
+      "To detect invalid input",
+      "To sort it",
+      "To make it immutable"
+    ],
+    "answer": 1,
+    "explanation": "Validation helps prevent invalid data from entering later calculations."
+  },
+  {
+    "id": 28,
+    "topic": "Strings and validation",
+    "difficulty": "Medium",
+    "question": "Which converts the string `'4.5'` to a floating-point number?",
+    "choices": [
+      "int('4.5')",
+      "float('4.5')",
+      "bool('4.5')",
+      "list('4.5')"
+    ],
+    "answer": 1,
+    "explanation": "float() parses decimal numeric text."
+  },
+  {
+    "id": 29,
+    "topic": "Strings and validation",
+    "difficulty": "Hard",
+    "question": "What does `re.fullmatch()` check?",
+    "choices": [
+      "Only the first character",
+      "A match over the entire string",
+      "Only the last character",
+      "String length only"
+    ],
+    "answer": 1,
+    "explanation": "fullmatch requires the whole string to match the pattern."
+  },
+  {
+    "id": 30,
+    "topic": "Strings and validation",
+    "difficulty": "Easy",
+    "question": "Which is the best first step for validating a username?",
+    "choices": [
+      "Assume it is valid",
+      "Check it against defined rules",
+      "Convert it to a list",
+      "Sort its characters"
+    ],
+    "answer": 1,
+    "explanation": "Validation should check the required format and constraints."
+  },
+  {
+    "id": 31,
+    "topic": "Collections",
+    "difficulty": "Easy",
+    "question": "Which collection stores key-value pairs?",
+    "choices": [
+      "list",
+      "tuple",
+      "dict",
+      "set"
+    ],
+    "answer": 2,
+    "explanation": "A dictionary maps keys to values."
+  },
+  {
+    "id": 32,
+    "topic": "Collections",
+    "difficulty": "Medium",
+    "question": "Which collection preserves insertion order and allows duplicates?",
+    "choices": [
+      "list",
+      "set",
+      "dict keys only",
+      "frozenset"
+    ],
+    "answer": 0,
+    "explanation": "Lists are ordered and may contain duplicates."
+  },
+  {
+    "id": 33,
+    "topic": "Collections",
+    "difficulty": "Medium",
+    "question": "What does `len([2, 4, 6])` return?",
+    "choices": [
+      "2",
+      "3",
+      "6",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "The list has three elements."
+  },
+  {
+    "id": 34,
+    "topic": "Collections",
+    "difficulty": "Hard",
+    "question": "How do you access the value for key `'name'` in dictionary `d`?",
+    "choices": [
+      "d.name",
+      "d['name']",
+      "d(name)",
+      "d->name"
+    ],
+    "answer": 1,
+    "explanation": "Dictionary items are commonly accessed with d[key]."
+  },
+  {
+    "id": 35,
+    "topic": "Collections",
+    "difficulty": "Easy",
+    "question": "Which structure is naturally suited to FIFO order processing?",
+    "choices": [
+      "Stack",
+      "Queue",
+      "Tree only",
+      "Set"
+    ],
+    "answer": 1,
+    "explanation": "A queue processes the first item added first."
+  },
+  {
+    "id": 36,
+    "topic": "Collections",
+    "difficulty": "Easy",
+    "question": "Which structure is commonly used for browser back navigation?",
+    "choices": [
+      "Queue",
+      "Stack",
+      "Set",
+      "Matrix"
+    ],
+    "answer": 1,
+    "explanation": "A stack supports last-in, first-out navigation history."
+  },
+  {
+    "id": 37,
+    "topic": "Collections",
+    "difficulty": "Medium",
+    "question": "What does `my_list.append(9)` do?",
+    "choices": [
+      "Adds 9 to the end",
+      "Removes 9",
+      "Sorts the list",
+      "Returns a new list only"
+    ],
+    "answer": 0,
+    "explanation": "append adds one item to the list."
+  },
+  {
+    "id": 38,
+    "topic": "Collections",
+    "difficulty": "Medium",
+    "question": "Which collection removes duplicate values by design?",
+    "choices": [
+      "list",
+      "tuple",
+      "set",
+      "string"
+    ],
+    "answer": 2,
+    "explanation": "Sets contain unique elements."
+  },
+  {
+    "id": 39,
+    "topic": "Collections",
+    "difficulty": "Hard",
+    "question": "What is `{'a': 1, 'b': 2}['b']`?",
+    "choices": [
+      "'b'",
+      "1",
+      "2",
+      "Error"
+    ],
+    "answer": 2,
+    "explanation": "Key b maps to value 2."
+  },
+  {
+    "id": 40,
+    "topic": "Collections",
+    "difficulty": "Easy",
+    "question": "What does `items.pop()` do to a list by default?",
+    "choices": [
+      "Removes and returns the last item",
+      "Removes the first item",
+      "Clears the list",
+      "Duplicates the list"
+    ],
+    "answer": 0,
+    "explanation": "pop() removes and returns the final element by default."
+  },
+  {
+    "id": 41,
+    "topic": "Functions and modularity",
+    "difficulty": "Easy",
+    "question": "Which keyword defines a function?",
+    "choices": [
+      "func",
+      "define",
+      "def",
+      "function"
+    ],
+    "answer": 2,
+    "explanation": "Python functions are defined with def."
+  },
+  {
+    "id": 42,
+    "topic": "Functions and modularity",
+    "difficulty": "Medium",
+    "question": "What does `return` do in a function?",
+    "choices": [
+      "Prints automatically",
+      "Sends a result back to the caller",
+      "Repeats the function",
+      "Imports a module"
+    ],
+    "answer": 1,
+    "explanation": "return exits the function and provides a result."
+  },
+  {
+    "id": 43,
+    "topic": "Functions and modularity",
+    "difficulty": "Medium",
+    "question": "Why split a program into functions?",
+    "choices": [
+      "To hide all errors",
+      "To improve reuse and organization",
+      "To make it always faster",
+      "To avoid variables"
+    ],
+    "answer": 1,
+    "explanation": "Functions modularize logic and support reuse and testing."
+  },
+  {
+    "id": 44,
+    "topic": "Functions and modularity",
+    "difficulty": "Hard",
+    "question": "What is a parameter?",
+    "choices": [
+      "A value passed at runtime only",
+      "A name in a function definition receiving an argument",
+      "A loop keyword",
+      "A module"
+    ],
+    "answer": 1,
+    "explanation": "Parameters are names in a function signature."
+  },
+  {
+    "id": 45,
+    "topic": "Functions and modularity",
+    "difficulty": "Easy",
+    "question": "What does `abs(-8)` return?",
+    "choices": [
+      "-8",
+      "8",
+      "0",
+      "Error"
+    ],
+    "answer": 1,
+    "explanation": "abs returns the absolute value."
+  },
+  {
+    "id": 46,
+    "topic": "Functions and modularity",
+    "difficulty": "Easy",
+    "question": "What is the purpose of `if __name__ == '__main__':`?",
+    "choices": [
+      "Declare a class",
+      "Run code when the file is executed directly",
+      "Install Python",
+      "Create a list"
+    ],
+    "answer": 1,
+    "explanation": "It guards code intended for direct execution."
+  },
+  {
+    "id": 47,
+    "topic": "Functions and modularity",
+    "difficulty": "Medium",
+    "question": "Which is a benefit of a pure function?",
+    "choices": [
+      "It always changes global state",
+      "Its output depends on inputs without side effects",
+      "It cannot return values",
+      "It needs a database"
+    ],
+    "answer": 1,
+    "explanation": "Pure functions are easier to reason about and test."
+  },
+  {
+    "id": 48,
+    "topic": "Functions and modularity",
+    "difficulty": "Medium",
+    "question": "What does a default parameter value provide?",
+    "choices": [
+      "A fallback when an argument is omitted",
+      "A required import",
+      "A loop condition",
+      "A return type"
+    ],
+    "answer": 0,
+    "explanation": "The default is used if the caller omits that argument."
+  },
+  {
+    "id": 49,
+    "topic": "Functions and modularity",
+    "difficulty": "Hard",
+    "question": "Which statement imports the `math` module?",
+    "choices": [
+      "include math",
+      "using math",
+      "import math",
+      "load.math"
+    ],
+    "answer": 2,
+    "explanation": "import is Python's module import statement."
+  },
+  {
+    "id": 50,
+    "topic": "Functions and modularity",
+    "difficulty": "Easy",
+    "question": "What is a useful reason to test a function separately?",
+    "choices": [
+      "To avoid calling it",
+      "To isolate and verify its behavior",
+      "To remove its parameters",
+      "To convert it into a class"
+    ],
+    "answer": 1,
+    "explanation": "Unit tests help check individual units of logic."
+  },
+  {
+    "id": 51,
+    "topic": "Recursion",
+    "difficulty": "Easy",
+    "question": "What must a recursive function have to stop recurring?",
+    "choices": [
+      "A base case",
+      "A global variable",
+      "A print statement",
+      "A class"
+    ],
+    "answer": 0,
+    "explanation": "The base case terminates recursion."
+  },
+  {
+    "id": 52,
+    "topic": "Recursion",
+    "difficulty": "Medium",
+    "question": "What is `factorial(1)` when factorial is defined conventionally?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "Undefined"
+    ],
+    "answer": 1,
+    "explanation": "1! equals 1."
+  },
+  {
+    "id": 53,
+    "topic": "Recursion",
+    "difficulty": "Medium",
+    "question": "In Tower of Hanoi, moving n disks optimally requires how many moves?",
+    "choices": [
+      "n\u00b2",
+      "2n",
+      "2\u207f \u2212 1",
+      "n!"
+    ],
+    "answer": 2,
+    "explanation": "The recurrence T(n)=2T(n\u22121)+1 yields 2^n\u22121."
+  },
+  {
+    "id": 54,
+    "topic": "Recursion",
+    "difficulty": "Hard",
+    "question": "What happens if recursion has no reachable base case?",
+    "choices": [
+      "It always returns zero",
+      "It may hit recursion depth limits",
+      "It becomes a loop automatically",
+      "It sorts the input"
+    ],
+    "answer": 1,
+    "explanation": "Unbounded recursion can raise RecursionError."
+  },
+  {
+    "id": 55,
+    "topic": "Recursion",
+    "difficulty": "Easy",
+    "question": "What is memoization?",
+    "choices": [
+      "Deleting cached values",
+      "Caching results to avoid repeated computation",
+      "Sorting a list",
+      "Converting text to numbers"
+    ],
+    "answer": 1,
+    "explanation": "Memoization stores results for repeated subproblems."
+  },
+  {
+    "id": 56,
+    "topic": "Recursion",
+    "difficulty": "Easy",
+    "question": "Which problem is a classic recursion example in the syllabus?",
+    "choices": [
+      "Tower of Hanoi",
+      "CSV header formatting only",
+      "Printing a constant",
+      "Opening a browser tab"
+    ],
+    "answer": 0,
+    "explanation": "Tower of Hanoi is listed among the recursion tasks."
+  },
+  {
+    "id": 57,
+    "topic": "Recursion",
+    "difficulty": "Medium",
+    "question": "For `f(n): return 1 if n==0 else n*f(n-1)`, what is `f(3)`?",
+    "choices": [
+      "3",
+      "5",
+      "6",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "3\u00d72\u00d71\u00d71 = 6."
+  },
+  {
+    "id": 58,
+    "topic": "Recursion",
+    "difficulty": "Medium",
+    "question": "Why can memoization speed up shortest-path subproblems?",
+    "choices": [
+      "It removes all edges",
+      "It reuses results for repeated states",
+      "It changes the graph to a list",
+      "It prevents recursion"
+    ],
+    "answer": 1,
+    "explanation": "Repeated states need not be recomputed."
+  },
+  {
+    "id": 59,
+    "topic": "Recursion",
+    "difficulty": "Hard",
+    "question": "What is a recursive call?",
+    "choices": [
+      "A function calling itself",
+      "A variable calling a loop",
+      "An import statement",
+      "A dictionary key"
+    ],
+    "answer": 0,
+    "explanation": "A recursive function invokes itself."
+  },
+  {
+    "id": 60,
+    "topic": "Recursion",
+    "difficulty": "Easy",
+    "question": "Which approach breaks a problem into smaller similar problems?",
+    "choices": [
+      "Recursion",
+      "String padding",
+      "Type casting only",
+      "Input prompting only"
+    ],
+    "answer": 0,
+    "explanation": "Recursion solves smaller instances of the same problem."
+  },
+  {
+    "id": 61,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Easy",
+    "question": "Which search method requires sorted data and halves the search range?",
+    "choices": [
+      "Linear search",
+      "Binary search",
+      "Random search",
+      "Depth-free search"
+    ],
+    "answer": 1,
+    "explanation": "Binary search repeatedly halves a sorted search interval."
+  },
+  {
+    "id": 62,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Medium",
+    "question": "What is the worst-case time complexity of linear search?",
+    "choices": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n\u00b2)"
+    ],
+    "answer": 2,
+    "explanation": "It may inspect every element."
+  },
+  {
+    "id": 63,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Medium",
+    "question": "Which approach splits a problem into smaller parts, solves them, and combines results?",
+    "choices": [
+      "Divide and conquer",
+      "Input validation",
+      "Casting",
+      "Queueing"
+    ],
+    "answer": 0,
+    "explanation": "Divide and conquer follows this three-part strategy."
+  },
+  {
+    "id": 64,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Hard",
+    "question": "Why compare algorithmic approaches for fastest completion?",
+    "choices": [
+      "To choose based on performance requirements",
+      "To avoid testing",
+      "To guarantee zero memory use",
+      "To remove outputs"
+    ],
+    "answer": 0,
+    "explanation": "Performance comparison helps select an appropriate approach."
+  },
+  {
+    "id": 65,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Easy",
+    "question": "What is the average lookup complexity for a Python dictionary by key?",
+    "choices": [
+      "Typically O(1)",
+      "Always O(n\u00b2)",
+      "Always O(n)",
+      "O(2\u207f)"
+    ],
+    "answer": 0,
+    "explanation": "Hash-table lookup is typically constant time on average."
+  },
+  {
+    "id": 66,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Easy",
+    "question": "Which sorting algorithm repeatedly selects the smallest remaining item?",
+    "choices": [
+      "Selection sort",
+      "Binary search",
+      "Breadth-first search",
+      "Memoization"
+    ],
+    "answer": 0,
+    "explanation": "Selection sort selects the next minimum each pass."
+  },
+  {
+    "id": 67,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Medium",
+    "question": "What does algorithm correctness mean?",
+    "choices": [
+      "It uses the fewest lines",
+      "It produces the specified result for valid inputs",
+      "It always uses recursion",
+      "It never accepts input"
+    ],
+    "answer": 1,
+    "explanation": "Correctness is about meeting the specification."
+  },
+  {
+    "id": 68,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Medium",
+    "question": "Why use a flowchart before coding a menu-driven program?",
+    "choices": [
+      "To visualize control flow",
+      "To compile Python",
+      "To increase memory",
+      "To replace tests entirely"
+    ],
+    "answer": 0,
+    "explanation": "A flowchart helps plan decisions and process steps."
+  },
+  {
+    "id": 69,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Hard",
+    "question": "What is a key trade-off in algorithm design?",
+    "choices": [
+      "Time versus memory use",
+      "Variable names versus comments only",
+      "Quotes versus brackets",
+      "Uppercase versus lowercase"
+    ],
+    "answer": 0,
+    "explanation": "Time and space efficiency can trade off."
+  },
+  {
+    "id": 70,
+    "topic": "Algorithms and complexity",
+    "difficulty": "Easy",
+    "question": "What is the first step when solving a programming problem?",
+    "choices": [
+      "Understand inputs, outputs, and constraints",
+      "Write random code",
+      "Skip edge cases",
+      "Install unrelated libraries"
+    ],
+    "answer": 0,
+    "explanation": "A clear problem definition guides the algorithm."
+  },
+  {
+    "id": 71,
+    "topic": "Applied numerical problems",
+    "difficulty": "Easy",
+    "question": "Which formula converts Celsius to Fahrenheit?",
+    "choices": [
+      "C \u00d7 5/9 + 32",
+      "C \u00d7 9/5 + 32",
+      "C + 273",
+      "C \u2212 32 \u00d7 5/9"
+    ],
+    "answer": 1,
+    "explanation": "F = C \u00d7 9/5 + 32."
+  },
+  {
+    "id": 72,
+    "topic": "Applied numerical problems",
+    "difficulty": "Medium",
+    "question": "Why check a temperature value is within an allowed range?",
+    "choices": [
+      "To validate input",
+      "To encrypt it",
+      "To sort it alphabetically",
+      "To convert it to a list"
+    ],
+    "answer": 0,
+    "explanation": "Range checks reject values outside the specification."
+  },
+  {
+    "id": 73,
+    "topic": "Applied numerical problems",
+    "difficulty": "Medium",
+    "question": "A price is 100 and discount is 10%. What is the final price?",
+    "choices": [
+      "10",
+      "90",
+      "100",
+      "110"
+    ],
+    "answer": 1,
+    "explanation": "100 \u2212 10% of 100 = 90."
+  },
+  {
+    "id": 74,
+    "topic": "Applied numerical problems",
+    "difficulty": "Hard",
+    "question": "For BMI, which formula is commonly used with weight in kg and height in metres?",
+    "choices": [
+      "weight \u00d7 height",
+      "weight / height\u00b2",
+      "height / weight\u00b2",
+      "weight + height"
+    ],
+    "answer": 1,
+    "explanation": "BMI = weight / (height \u00d7 height)."
+  },
+  {
+    "id": 75,
+    "topic": "Applied numerical problems",
+    "difficulty": "Easy",
+    "question": "A program totals values in a list. Which pattern is suitable?",
+    "choices": [
+      "Accumulator initialized to 0",
+      "Always overwrite with each value",
+      "Use only a string",
+      "Use break before the loop"
+    ],
+    "answer": 0,
+    "explanation": "An accumulator adds each value to a running total."
+  },
+  {
+    "id": 76,
+    "topic": "Applied numerical problems",
+    "difficulty": "Easy",
+    "question": "What should a subsidy calculator do before calculating a benefit?",
+    "choices": [
+      "Validate relevant inputs and eligibility conditions",
+      "Ignore all inputs",
+      "Sort the menu labels",
+      "Use recursion always"
+    ],
+    "answer": 0,
+    "explanation": "Validation and eligibility checks precede calculation."
+  },
+  {
+    "id": 77,
+    "topic": "Applied numerical problems",
+    "difficulty": "Medium",
+    "question": "If a rectangle has width 4 and height 3, what is its area?",
+    "choices": [
+      "7",
+      "12",
+      "14",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "Area equals width \u00d7 height."
+  },
+  {
+    "id": 78,
+    "topic": "Applied numerical problems",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a conditional risk classification?",
+    "choices": [
+      "Choose a category based on thresholds",
+      "Always return the same category",
+      "Convert every value to text",
+      "Sort the thresholds"
+    ],
+    "answer": 0,
+    "explanation": "Conditionals map values to the appropriate category."
+  },
+  {
+    "id": 79,
+    "topic": "Applied numerical problems",
+    "difficulty": "Hard",
+    "question": "Which operation finds the average of numeric values?",
+    "choices": [
+      "sum(values) / len(values)",
+      "max(values) + len(values)",
+      "len(values) / sum(values)",
+      "values.join()"
+    ],
+    "answer": 0,
+    "explanation": "Mean is total divided by count, provided the list is non-empty."
+  },
+  {
+    "id": 80,
+    "topic": "Applied numerical problems",
+    "difficulty": "Easy",
+    "question": "Why should code handle an empty list before dividing by its length?",
+    "choices": [
+      "To avoid division by zero",
+      "To change the list order",
+      "To force a float",
+      "To import pandas"
+    ],
+    "answer": 0,
+    "explanation": "An empty list has length zero."
+  },
+  {
+    "id": 81,
+    "topic": "DNA and text processing",
+    "difficulty": "Easy",
+    "question": "Which data type is useful for mapping each nucleotide to a count?",
+    "choices": [
+      "dict",
+      "float",
+      "bool",
+      "range only"
+    ],
+    "answer": 0,
+    "explanation": "A dictionary can map nucleotide symbols to counts."
+  },
+  {
+    "id": 82,
+    "topic": "DNA and text processing",
+    "difficulty": "Medium",
+    "question": "Which bases are standard in DNA sequences?",
+    "choices": [
+      "A, C, G, T",
+      "A, C, G, U",
+      "X, Y, Z, T",
+      "A, B, C, D"
+    ],
+    "answer": 0,
+    "explanation": "DNA uses adenine, cytosine, guanine, and thymine."
+  },
+  {
+    "id": 83,
+    "topic": "DNA and text processing",
+    "difficulty": "Medium",
+    "question": "Which base is used in RNA in place of thymine?",
+    "choices": [
+      "Adenine",
+      "Uracil",
+      "Cytosine",
+      "Guanine"
+    ],
+    "answer": 1,
+    "explanation": "RNA uses U instead of T."
+  },
+  {
+    "id": 84,
+    "topic": "DNA and text processing",
+    "difficulty": "Hard",
+    "question": "What is the DNA complement of A?",
+    "choices": [
+      "A",
+      "C",
+      "G",
+      "T"
+    ],
+    "answer": 3,
+    "explanation": "A pairs with T in DNA."
+  },
+  {
+    "id": 85,
+    "topic": "DNA and text processing",
+    "difficulty": "Easy",
+    "question": "What is the DNA complement of C?",
+    "choices": [
+      "A",
+      "C",
+      "G",
+      "T"
+    ],
+    "answer": 2,
+    "explanation": "C pairs with G."
+  },
+  {
+    "id": 86,
+    "topic": "DNA and text processing",
+    "difficulty": "Easy",
+    "question": "Why validate a DNA sequence before counting bases?",
+    "choices": [
+      "To reject invalid symbols",
+      "To increase its length",
+      "To sort the bases",
+      "To convert it to an integer"
+    ],
+    "answer": 0,
+    "explanation": "Validation ensures the sequence contains allowed symbols."
+  },
+  {
+    "id": 87,
+    "topic": "DNA and text processing",
+    "difficulty": "Medium",
+    "question": "Which method can count occurrences of a character in a string?",
+    "choices": [
+      "count()",
+      "sumchar()",
+      "frequency()",
+      "occur()"
+    ],
+    "answer": 0,
+    "explanation": "str.count(substring) counts non-overlapping occurrences."
+  },
+  {
+    "id": 88,
+    "topic": "DNA and text processing",
+    "difficulty": "Medium",
+    "question": "What is the result of `'ACGT'.replace('T','U')`?",
+    "choices": [
+      "ACGT",
+      "ACGU",
+      "UGCA",
+      "AUCG"
+    ],
+    "answer": 1,
+    "explanation": "Replacing T with U gives ACGU."
+  },
+  {
+    "id": 89,
+    "topic": "DNA and text processing",
+    "difficulty": "Hard",
+    "question": "Which operation searches for a substring within a sequence?",
+    "choices": [
+      "Membership or find/index search",
+      "Only multiplication",
+      "Only recursion",
+      "Type annotation"
+    ],
+    "answer": 0,
+    "explanation": "Use in, find(), or an appropriate search to locate a substring."
+  },
+  {
+    "id": 90,
+    "topic": "DNA and text processing",
+    "difficulty": "Easy",
+    "question": "Why normalize a sequence to uppercase before validation?",
+    "choices": [
+      "To handle lowercase input consistently",
+      "To remove all bases",
+      "To change DNA to RNA",
+      "To make it numeric"
+    ],
+    "answer": 0,
+    "explanation": "Normalization avoids treating lowercase valid symbols as different."
+  },
+  {
+    "id": 91,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Easy",
+    "question": "Which library is commonly used for numerical arrays in Python?",
+    "choices": [
+      "NumPy",
+      "Flask",
+      "re",
+      "pathlib"
+    ],
+    "answer": 0,
+    "explanation": "NumPy provides efficient multidimensional arrays."
+  },
+  {
+    "id": 92,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Medium",
+    "question": "Which library provides the DataFrame structure?",
+    "choices": [
+      "Pandas",
+      "math",
+      "random",
+      "sys"
+    ],
+    "answer": 0,
+    "explanation": "Pandas DataFrames represent tabular data."
+  },
+  {
+    "id": 93,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Medium",
+    "question": "What does `df['marks'].mean()` compute?",
+    "choices": [
+      "Maximum mark",
+      "Mean of marks column",
+      "Number of columns",
+      "Sort order"
+    ],
+    "answer": 1,
+    "explanation": "mean() computes the arithmetic average."
+  },
+  {
+    "id": 94,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Hard",
+    "question": "Why use a DataFrame for food-waste analysis?",
+    "choices": [
+      "To organize and analyze tabular records",
+      "To run a browser",
+      "To define recursion",
+      "To replace all variables"
+    ],
+    "answer": 0,
+    "explanation": "DataFrames support tabular filtering, aggregation, and analysis."
+  },
+  {
+    "id": 95,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Easy",
+    "question": "What does a NumPy array operation often enable?",
+    "choices": [
+      "Vectorized calculation over many values",
+      "Only one string at a time",
+      "HTML rendering",
+      "Login sessions"
+    ],
+    "answer": 0,
+    "explanation": "Vectorization applies operations efficiently across array elements."
+  },
+  {
+    "id": 96,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Easy",
+    "question": "Which operation counts missing values by column in Pandas?",
+    "choices": [
+      "df.isna().sum()",
+      "df.sort_values()",
+      "df.rename()",
+      "df.head(0) only"
+    ],
+    "answer": 0,
+    "explanation": "isna() marks missing values and sum() counts them."
+  },
+  {
+    "id": 97,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Medium",
+    "question": "Which method shows the first five DataFrame rows by default?",
+    "choices": [
+      "head()",
+      "tail(0)",
+      "first()",
+      "begin()"
+    ],
+    "answer": 0,
+    "explanation": "head() defaults to five rows."
+  },
+  {
+    "id": 98,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Medium",
+    "question": "What should you check before calculating average attendance?",
+    "choices": [
+      "Missing or invalid entries",
+      "Only column font",
+      "Browser history",
+      "Recursion depth"
+    ],
+    "answer": 0,
+    "explanation": "Data quality affects the validity of the average."
+  },
+  {
+    "id": 99,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Hard",
+    "question": "What is a column in a DataFrame analogous to?",
+    "choices": [
+      "A variable/field across records",
+      "A function call stack",
+      "A dice roll",
+      "A loop keyword"
+    ],
+    "answer": 0,
+    "explanation": "Columns hold one named attribute for each row."
+  },
+  {
+    "id": 100,
+    "topic": "NumPy and Pandas",
+    "difficulty": "Easy",
+    "question": "Which task matches the syllabus's library-based analysis examples?",
+    "choices": [
+      "Analyzing marks or energy usage",
+      "Designing a game controller",
+      "Changing Python syntax",
+      "Writing CSS only"
+    ],
+    "answer": 0,
+    "explanation": "The syllabus includes marks, attendance, and energy usage analysis."
+  },
+  {
+    "id": 101,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Easy",
+    "question": "Which principle does a stack follow?",
+    "choices": [
+      "FIFO",
+      "LIFO",
+      "Random order",
+      "Sorted order only"
+    ],
+    "answer": 1,
+    "explanation": "A stack is last-in, first-out."
+  },
+  {
+    "id": 102,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Medium",
+    "question": "Which principle does a queue follow?",
+    "choices": [
+      "LIFO",
+      "FIFO",
+      "Reverse alphabetical",
+      "Highest value first"
+    ],
+    "answer": 1,
+    "explanation": "A queue is first-in, first-out."
+  },
+  {
+    "id": 103,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Medium",
+    "question": "A browser back button is commonly modeled with which structure?",
+    "choices": [
+      "Stack",
+      "Queue",
+      "Set",
+      "Scalar"
+    ],
+    "answer": 0,
+    "explanation": "The most recent page is the first one revisited."
+  },
+  {
+    "id": 104,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Hard",
+    "question": "An order-processing line should normally use which structure?",
+    "choices": [
+      "Queue",
+      "Stack",
+      "Set",
+      "Tuple only"
+    ],
+    "answer": 0,
+    "explanation": "Orders are handled in arrival order in a FIFO queue."
+  },
+  {
+    "id": 105,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Easy",
+    "question": "Which list operation can simulate pushing onto a stack?",
+    "choices": [
+      "append()",
+      "sort()",
+      "count()",
+      "clear()"
+    ],
+    "answer": 0,
+    "explanation": "append() adds to the top/end of a list-based stack."
+  },
+  {
+    "id": 106,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Easy",
+    "question": "Which list operation can simulate popping from a stack?",
+    "choices": [
+      "pop()",
+      "insert(0, x) only",
+      "extend()",
+      "reverse()"
+    ],
+    "answer": 0,
+    "explanation": "pop() removes the final item by default."
+  },
+  {
+    "id": 107,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Medium",
+    "question": "If a queue contains A then B, which is removed first by FIFO?",
+    "choices": [
+      "A",
+      "B",
+      "Both necessarily",
+      "Neither"
+    ],
+    "answer": 0,
+    "explanation": "The earliest enqueued item A leaves first."
+  },
+  {
+    "id": 108,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Medium",
+    "question": "What is an underflow condition in a stack?",
+    "choices": [
+      "Popping an empty stack",
+      "Pushing an item",
+      "Sorting a list",
+      "Adding a queue item"
+    ],
+    "answer": 0,
+    "explanation": "Removing from an empty stack causes underflow at the data-structure level."
+  },
+  {
+    "id": 109,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Hard",
+    "question": "Why use a queue for incoming orders?",
+    "choices": [
+      "Preserve arrival order",
+      "Always process newest first",
+      "Remove duplicate orders automatically",
+      "Sort by customer name automatically"
+    ],
+    "answer": 0,
+    "explanation": "FIFO preserves the order in which requests arrive."
+  },
+  {
+    "id": 110,
+    "topic": "Stacks, queues, and navigation",
+    "difficulty": "Easy",
+    "question": "Which method is useful to test whether a list-backed stack is empty?",
+    "choices": [
+      "len(stack) == 0",
+      "stack.upper()",
+      "stack.mean()",
+      "stack.keys()"
+    ],
+    "answer": 0,
+    "explanation": "An empty list has length zero."
+  },
+  {
+    "id": 111,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Easy",
+    "question": "Two axis-aligned rectangles overlap if their horizontal and vertical intervals both overlap. What is the key idea?",
+    "choices": [
+      "Check both dimensions",
+      "Check only their colours",
+      "Compare only areas",
+      "Compare their names"
+    ],
+    "answer": 0,
+    "explanation": "Overlap requires intersection on both axes."
+  },
+  {
+    "id": 112,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Medium",
+    "question": "Which Boolean operator requires both conditions to be true?",
+    "choices": [
+      "or",
+      "and",
+      "not",
+      "in"
+    ],
+    "answer": 1,
+    "explanation": "and is true only when both operands are true."
+  },
+  {
+    "id": 113,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Medium",
+    "question": "What does `elif` allow?",
+    "choices": [
+      "Another conditional branch",
+      "A loop exit",
+      "A function return only",
+      "A module import"
+    ],
+    "answer": 0,
+    "explanation": "elif adds a subsequent condition to an if chain."
+  },
+  {
+    "id": 114,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Hard",
+    "question": "Why define a function for rectangle overlap?",
+    "choices": [
+      "Reuse and test the geometric rule",
+      "Avoid parameters",
+      "Guarantee overlap",
+      "Convert rectangles to strings"
+    ],
+    "answer": 0,
+    "explanation": "A function encapsulates the rule for reuse."
+  },
+  {
+    "id": 115,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Easy",
+    "question": "If two intervals are separated with a gap, do they overlap?",
+    "choices": [
+      "Yes, always",
+      "No",
+      "Only if their labels match",
+      "Only if their areas are equal"
+    ],
+    "answer": 1,
+    "explanation": "Separated intervals do not intersect."
+  },
+  {
+    "id": 116,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Easy",
+    "question": "What is the purpose of `return False` in a Boolean function?",
+    "choices": [
+      "Report a negative result",
+      "Print False only",
+      "Restart the program",
+      "Skip importing"
+    ],
+    "answer": 0,
+    "explanation": "The caller receives the Boolean result."
+  },
+  {
+    "id": 117,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Medium",
+    "question": "For a water-quality rule, what should a threshold condition do?",
+    "choices": [
+      "Compare the measured value with the specified limit",
+      "Ignore the measurement",
+      "Sort the labels",
+      "Always raise an exception"
+    ],
+    "answer": 0,
+    "explanation": "Threshold logic compares a measurement to a requirement."
+  },
+  {
+    "id": 118,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Medium",
+    "question": "Which operator means 'not equal to'?",
+    "choices": [
+      "==",
+      "!=",
+      "<=",
+      "=>"
+    ],
+    "answer": 1,
+    "explanation": "!= checks inequality."
+  },
+  {
+    "id": 119,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Hard",
+    "question": "Why test values exactly at a threshold?",
+    "choices": [
+      "Boundary cases can reveal logic errors",
+      "They are always invalid",
+      "They remove all branches",
+      "They convert floats to strings"
+    ],
+    "answer": 0,
+    "explanation": "Boundary tests help verify inclusive/exclusive conditions."
+  },
+  {
+    "id": 120,
+    "topic": "Conditions and geometric logic",
+    "difficulty": "Easy",
+    "question": "What is a Boolean expression's result?",
+    "choices": [
+      "True or False",
+      "Only a string",
+      "Always an integer list",
+      "A module"
+    ],
+    "answer": 0,
+    "explanation": "Boolean expressions evaluate to True or False."
+  },
+  {
+    "id": 121,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Easy",
+    "question": "What is an algorithm?",
+    "choices": [
+      "A finite sequence of steps to solve a problem",
+      "A Python package only",
+      "A hardware component",
+      "A random output"
+    ],
+    "answer": 0,
+    "explanation": "An algorithm specifies steps for solving a task."
+  },
+  {
+    "id": 122,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Medium",
+    "question": "Why identify inputs and outputs before coding?",
+    "choices": [
+      "To define the problem contract",
+      "To skip validation",
+      "To avoid all functions",
+      "To make every loop infinite"
+    ],
+    "answer": 0,
+    "explanation": "Inputs and outputs define what the solution must accept and produce."
+  },
+  {
+    "id": 123,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Medium",
+    "question": "Which flowchart shape commonly represents a decision?",
+    "choices": [
+      "Diamond",
+      "Oval",
+      "Rectangle only",
+      "Arrowhead"
+    ],
+    "answer": 0,
+    "explanation": "Diamonds represent decisions/branches."
+  },
+  {
+    "id": 124,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Hard",
+    "question": "Which flowchart shape commonly represents a process step?",
+    "choices": [
+      "Rectangle",
+      "Diamond",
+      "Circle only",
+      "Cloud"
+    ],
+    "answer": 0,
+    "explanation": "Rectangles commonly represent processing steps."
+  },
+  {
+    "id": 125,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Easy",
+    "question": "What is decomposition?",
+    "choices": [
+      "Breaking a large problem into smaller tasks",
+      "Combining all variables into one string",
+      "Removing test cases",
+      "Repeating forever"
+    ],
+    "answer": 0,
+    "explanation": "Decomposition makes a problem more manageable."
+  },
+  {
+    "id": 126,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Easy",
+    "question": "What is pseudocode useful for?",
+    "choices": [
+      "Describing logic without strict programming syntax",
+      "Executing directly in Python",
+      "Replacing all testing",
+      "Storing passwords"
+    ],
+    "answer": 0,
+    "explanation": "Pseudocode focuses on logic rather than syntax."
+  },
+  {
+    "id": 127,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Medium",
+    "question": "Which is a good way to handle invalid input?",
+    "choices": [
+      "Validate and explain/re-prompt",
+      "Silently accept everything",
+      "Crash intentionally",
+      "Ignore the specification"
+    ],
+    "answer": 0,
+    "explanation": "Validation and clear error handling improve robustness."
+  },
+  {
+    "id": 128,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Medium",
+    "question": "What is an edge case?",
+    "choices": [
+      "An unusual boundary or special input condition",
+      "The normal case only",
+      "A Python keyword",
+      "A package manager"
+    ],
+    "answer": 0,
+    "explanation": "Edge cases include empty inputs and boundary values."
+  },
+  {
+    "id": 129,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Hard",
+    "question": "Why trace a program manually?",
+    "choices": [
+      "Follow state changes to understand behavior",
+      "Change its file extension",
+      "Install libraries",
+      "Encrypt variables"
+    ],
+    "answer": 0,
+    "explanation": "Tracing reveals how values change step by step."
+  },
+  {
+    "id": 130,
+    "topic": "Problem solving and flowcharts",
+    "difficulty": "Easy",
+    "question": "What is the role of test cases?",
+    "choices": [
+      "Check that expected behavior matches actual behavior",
+      "Guarantee code has no bugs in all cases",
+      "Replace requirements",
+      "Remove output"
+    ],
+    "answer": 0,
+    "explanation": "Tests compare program behavior against expectations."
+  },
+  {
+    "id": 131,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Easy",
+    "question": "A reforestation estimate uses repeated smaller stages. Which technique may help model a self-similar process?",
+    "choices": [
+      "Recursion",
+      "String uppercasing",
+      "Queue only",
+      "Regex only"
+    ],
+    "answer": 0,
+    "explanation": "The syllabus includes reforestation tasks using recursion/functions."
+  },
+  {
+    "id": 132,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Medium",
+    "question": "For recurring-character detection, what is a useful first operation?",
+    "choices": [
+      "Count or track seen characters",
+      "Convert all characters to integers",
+      "Sort unrelated numbers",
+      "Open a socket"
+    ],
+    "answer": 0,
+    "explanation": "Tracking counts or seen characters identifies repetition."
+  },
+  {
+    "id": 133,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Medium",
+    "question": "Why should a BMI classification program validate height?",
+    "choices": [
+      "Zero or invalid height makes calculation invalid",
+      "Height is never used",
+      "It converts BMI to a string",
+      "It removes loops"
+    ],
+    "answer": 0,
+    "explanation": "Height must be positive and valid before dividing by height squared."
+  },
+  {
+    "id": 134,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Hard",
+    "question": "In energy-usage analysis, what might a daily aggregate represent?",
+    "choices": [
+      "Sum or mean of measurements for a day",
+      "A browser stack",
+      "A regex pattern",
+      "A function parameter only"
+    ],
+    "answer": 0,
+    "explanation": "Aggregation summarizes observations by period."
+  },
+  {
+    "id": 135,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Easy",
+    "question": "Why should a water-quality program state units?",
+    "choices": [
+      "Values are meaningful only with correct units",
+      "Units make conditions unnecessary",
+      "Units replace validation",
+      "Units sort the data"
+    ],
+    "answer": 0,
+    "explanation": "Unit consistency is essential for valid threshold comparisons."
+  },
+  {
+    "id": 136,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Easy",
+    "question": "For a subsidy eligibility program, why separate eligibility from payment calculation?",
+    "choices": [
+      "Clearer, testable program logic",
+      "To hide the conditions",
+      "To ensure every applicant qualifies",
+      "To avoid Boolean values"
+    ],
+    "answer": 0,
+    "explanation": "Separating decisions and calculations improves clarity."
+  },
+  {
+    "id": 137,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Medium",
+    "question": "What is an appropriate way to summarize marks data?",
+    "choices": [
+      "Mean, minimum, maximum, or counts",
+      "Only browser navigation",
+      "DNA complement",
+      "Dice values"
+    ],
+    "answer": 0,
+    "explanation": "Descriptive statistics summarize marks."
+  },
+  {
+    "id": 138,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Medium",
+    "question": "Why use a menu-driven program for multiple operations?",
+    "choices": [
+      "Let users choose an operation repeatedly",
+      "Force a single fixed operation",
+      "Prevent all input",
+      "Remove control flow"
+    ],
+    "answer": 0,
+    "explanation": "A menu supports repeated choices until the user exits."
+  },
+  {
+    "id": 139,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Hard",
+    "question": "When processing many food-waste records, why use aggregation?",
+    "choices": [
+      "Summarize trends across records",
+      "Change all records to code",
+      "Remove every value",
+      "Make each row unique automatically"
+    ],
+    "answer": 0,
+    "explanation": "Aggregation reveals totals or patterns across data."
+  },
+  {
+    "id": 140,
+    "topic": "Applied projects: sustainability and health",
+    "difficulty": "Easy",
+    "question": "What should a program do when a user's choice is outside the menu?",
+    "choices": [
+      "Handle it as invalid and prompt appropriately",
+      "Assume it means exit",
+      "Run all options",
+      "Ignore the choice silently"
+    ],
+    "answer": 0,
+    "explanation": "Invalid choices should be handled explicitly."
+  },
+  {
+    "id": 141,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Easy",
+    "question": "What exception may occur when converting `'abc'` with `int()`?",
+    "choices": [
+      "ValueError",
+      "KeyError",
+      "IndexError",
+      "StopIteration"
+    ],
+    "answer": 0,
+    "explanation": "The text is not a valid integer literal."
+  },
+  {
+    "id": 142,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Medium",
+    "question": "Which block can handle a conversion error?",
+    "choices": [
+      "try/except",
+      "if/import only",
+      "for/else only",
+      "def/class only"
+    ],
+    "answer": 0,
+    "explanation": "try/except handles exceptions."
+  },
+  {
+    "id": 143,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Medium",
+    "question": "What does `assert x > 0` do when x is 0?",
+    "choices": [
+      "Raises AssertionError",
+      "Returns 0",
+      "Changes x to 1",
+      "Prints x"
+    ],
+    "answer": 0,
+    "explanation": "The assertion fails when its condition is false."
+  },
+  {
+    "id": 144,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Hard",
+    "question": "Why avoid repeating the same calculation in many places?",
+    "choices": [
+      "A helper function can reduce duplication",
+      "Duplication always improves quality",
+      "It prevents testing",
+      "It disables variables"
+    ],
+    "answer": 0,
+    "explanation": "Reusable functions reduce duplicated logic."
+  },
+  {
+    "id": 145,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Easy",
+    "question": "Which is the best way to investigate an unexpected result?",
+    "choices": [
+      "Reproduce it and inspect inputs/state",
+      "Change random lines",
+      "Delete tests",
+      "Ignore it"
+    ],
+    "answer": 0,
+    "explanation": "Systematic debugging isolates the cause."
+  },
+  {
+    "id": 146,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Easy",
+    "question": "What does `IndexError` commonly indicate?",
+    "choices": [
+      "An invalid sequence index",
+      "A bad dictionary key only",
+      "An invalid import always",
+      "A syntax comment"
+    ],
+    "answer": 0,
+    "explanation": "IndexError occurs when a sequence index is out of range."
+  },
+  {
+    "id": 147,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Medium",
+    "question": "What does `KeyError` commonly indicate?",
+    "choices": [
+      "A dictionary key is missing",
+      "A list is too long",
+      "A string is lowercase",
+      "A loop has ended"
+    ],
+    "answer": 0,
+    "explanation": "KeyError is raised for a missing mapping key."
+  },
+  {
+    "id": 148,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Medium",
+    "question": "Why use meaningful variable names?",
+    "choices": [
+      "Improve readability and maintenance",
+      "Make code execute without parsing",
+      "Replace comments and tests entirely",
+      "Guarantee faster algorithms"
+    ],
+    "answer": 0,
+    "explanation": "Names communicate the purpose of values."
+  },
+  {
+    "id": 149,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Hard",
+    "question": "What is a regression test?",
+    "choices": [
+      "A test that checks existing behavior after changes",
+      "A test that only checks spelling",
+      "A way to remove bugs automatically",
+      "A recursive function"
+    ],
+    "answer": 0,
+    "explanation": "Regression tests catch previously working behavior that breaks."
+  },
+  {
+    "id": 150,
+    "topic": "Python debugging and reliability",
+    "difficulty": "Easy",
+    "question": "What should a program do when input is malformed?",
+    "choices": [
+      "Handle it safely and explain the problem",
+      "Assume the input is correct",
+      "Use it in every calculation",
+      "Disable all validation"
+    ],
+    "answer": 0,
+    "explanation": "Robust programs handle malformed inputs deliberately."
+  }
+]
