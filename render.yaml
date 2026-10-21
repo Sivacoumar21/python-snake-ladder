@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: python-snake-ladder-quiz
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_USERNAME
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: python-snake-ladder-db
+          property: connectionString
+databases:
+  - name: python-snake-ladder-db
+    databaseName: snakes_ladders
+    user: snakes_ladders_user
